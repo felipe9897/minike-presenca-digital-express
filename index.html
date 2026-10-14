@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Mini-site, catalogo e materiais digitais para pequenos negocios.">
+  <title>Presenca Digital Express | Minike</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo" role="status">DEMONSTRACAO LOCAL — ainda nao publicada</div>
+  <header class="hero">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="#inicio" aria-label="Minike, inicio">MI<span>NIKE</span></a>
+      <a class="button ghost" href="#contato">Pedir informacoes</a>
+    </nav>
+    <div id="inicio" class="hero-grid">
+      <section>
+        <p class="eyebrow">Presenca Digital Express Minike</p>
+        <h1>Seu negocio apresentado com clareza e pronto para receber contatos.</h1>
+        <p class="lead">Mini-site responsivo, catalogo e materiais de divulgacao com escopo e preco definidos.</p>
+        <div class="actions">
+          <a class="button" href="#planos">Ver planos</a>
+          <a class="text-link" href="#demonstracao">Ver demonstracao</a>
+        </div>
+        <p class="fine">Entrega em ate cinco dias uteis apos briefing completo e pagamento confirmado.</p>
+      </section>
+      <aside class="preview" aria-label="Resumo da entrega">
+        <span class="tag">Pacote principal</span>
+        <strong>R$ 297</strong><small>a vista</small>
+        <ul><li>Mini-site responsivo</li><li>Ate 20 itens</li><li>12 artes originais</li><li>Uma revisao</li></ul>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="demonstracao" class="section">
+      <p class="eyebrow">Amostra real do formato</p>
+      <h2>Uma pagina direta para explicar, provar e facilitar o contato.</h2>
+      <div class="cards">
+        <article><span>01</span><h3>Informacao organizada</h3><p>Servicos, horario, regiao atendida e diferenciais em um so lugar.</p></article>
+        <article><span>02</span><h3>Catalogo enxuto</h3><p>Ate 20 produtos ou servicos com nome, descricao e preco, quando aplicavel.</p></article>
+        <article><span>03</span><h3>Contato simples</h3><p>Chamada clara para orcamento, reserva, mensagem ou visita.</p></article>
+      </div>
+    </section>
+
+    <section id="planos" class="section tint">
+      <p class="eyebrow">Precos transparentes</p><h2>Escolha um ponto de partida.</h2>
+      <div class="pricing">
+        <article><h3>Entrada</h3><p class="price">R$ 197</p><p>Para os tres primeiros clientes. Mini-pagina, ate 10 itens, contato e uma revisao.</p></article>
+        <article class="featured"><p class="pill">Mais completo</p><h3>Principal</h3><p class="price">R$ 297</p><p>Mini-site, ate 20 itens, 12 artes, SEO local basico e uma revisao.</p></article>
+        <article><h3>Manutencao</h3><p class="price">R$ 97<small>/mes</small></p><p>Ate quatro alteracoes simples mensais e verificacao de links.</p></article>
+      </div>
+      <p class="fine">Dominio, hospedagem, anuncios e integracoes pagas nao estao incluidos. Nao prometemos vendas, ranking ou viralizacao.</p>
+    </section>
+
+    <section class="section split">
+      <div><p class="eyebrow">Como funciona</p><h2>Escopo fechado, processo visivel.</h2></div>
+      <ol class="steps"><li><strong>Briefing</strong><span>Voce envia as informacoes e materiais autorizados.</span></li><li><strong>Confirmacao</strong><span>Validamos escopo, aceite e pagamento oficial.</span></li><li><strong>Producao</strong><span>Montamos e testamos a previa em ambiente separado.</span></li><li><strong>Entrega</strong><span>Aplicamos uma rodada de revisao e entregamos os arquivos.</span></li></ol>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div><p class="eyebrow">Solicitar informacoes</p><h2>Conte o basico sobre seu negocio.</h2><p>Esta demonstracao nao envia dados para servidor. Ao conectar o canal oficial, o formulario abrira uma mensagem preparada para o WhatsApp comercial.</p></div>
+      <form id="lead-form" novalidate>
+        <label>Nome<input name="nome" required maxlength="80" autocomplete="name"></label>
+        <label>Nome do negocio<input name="negocio" required maxlength="100" autocomplete="organization"></label>
+        <label>Cidade<input name="cidade" required maxlength="80" autocomplete="address-level2"></label>
+        <label>Contato comercial<input name="contato" required maxlength="120" autocomplete="tel"></label>
+        <label>O que voce precisa?<textarea name="necessidade" required maxlength="600" rows="4"></textarea></label>
+        <label class="check"><input type="checkbox" name="consentimento" required><span>Concordo que estes dados sejam usados para responder minha solicitacao. Li a <a href="privacidade.html">politica de privacidade</a>.</span></label>
+        <button class="button" type="submit">Preparar solicitacao</button>
+        <p id="form-status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><span>Minike — solucoes digitais simples para pequenos negocios.</span><a href="privacidade.html">Privacidade</a></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
+
