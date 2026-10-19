@@ -70,6 +70,11 @@
         <label class="check"><input type="checkbox" name="consentimento" required><span>Concordo que estes dados sejam usados para responder minha solicitacao. Li a <a href="privacidade.html">politica de privacidade</a>.</span></label>
         <button class="button" type="submit">Preparar solicitacao</button>
         <p id="form-status" class="status" role="status" aria-live="polite"></p>
+        <div id="copy-fallback" class="copy-fallback" hidden>
+          <label for="prepared-message">Mensagem para copiar manualmente</label>
+          <textarea id="prepared-message" readonly rows="7"></textarea>
+          <p class="fine">A copia automatica nao funcionou. Copie o texto acima e envie pelo seu canal comercial. Nada foi enviado por este site.</p>
+        </div>
       </form>
     </section>
   </main>
